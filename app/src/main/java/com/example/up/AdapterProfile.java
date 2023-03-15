@@ -67,6 +67,7 @@ public class AdapterProfile extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         View v = View.inflate(mContext, R.layout.maska_profile, null);
+        View v1 = View.inflate(mContext, R.layout.maska_plus, null);
 
         ImageView Image = v.findViewById(R.id.ppz);
         TextView Time = v.findViewById(R.id.time);
@@ -80,6 +81,15 @@ public class AdapterProfile extends BaseAdapter {
 
         //Переход на детальную информацию
         v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intenDetalis = new Intent(mContext, DetailsImage.class);
+                intenDetalis.putExtra("Pictures", mask);
+                mContext.startActivity(intenDetalis);
+
+            }
+        });
+        v1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intenDetalis = new Intent(mContext, DetailsImage.class);

@@ -23,7 +23,7 @@ public class Profile extends AppCompatActivity {
     AdapterProfile pAdapter;
     Connection connection;
     GridView listView;
-    Button btn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,6 +98,7 @@ public class Profile extends AppCompatActivity {
                     pAdapter.notifyDataSetInvalidated();
                 }
                 connection.close();
+
             } else {
             }
         } catch (SQLException throwables) {
