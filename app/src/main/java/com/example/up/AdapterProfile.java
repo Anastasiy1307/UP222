@@ -70,15 +70,13 @@ public class AdapterProfile extends BaseAdapter {
 
         ImageView Image = v.findViewById(R.id.ppz);
         TextView Time = v.findViewById(R.id.time);
-        ImageView Image1 = v.findViewById(R.id.ppz1);
-        TextView Time1 = v.findViewById(R.id.time1);
 
         MaskaProfile mask = maskaProfiles.get(position);
         Time.setText(mask.getTime());
-        Time1.setText(mask.getTime());
+
 
         Image.setImageBitmap(getUserImage(mask.getImage()));
-        Image1.setImageBitmap(getUserImage(mask.getImage()));
+
 
         //Переход на детальную информацию
         v.setOnClickListener(new View.OnClickListener() {

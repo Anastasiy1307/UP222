@@ -41,7 +41,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageView13"
         app:srcCompat="@drawable/nado3" />
 
-    <ListView
+    <GridView
         android:id="@+id/Profile_ListFoto"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
@@ -52,7 +52,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Profile_Name" />
+        app:layout_constraintTop_toBottomOf="@+id/Profile_Name"
+        android:numColumns="auto_fit"/>
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/Profile_Image"

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.GridView;
 import android.widget.ListView;
 
 import java.sql.Connection;
@@ -21,7 +22,7 @@ public class Profile extends AppCompatActivity {
     List<MaskaProfile> maskaProfiles;
     AdapterProfile pAdapter;
     Connection connection;
-    ListView listView;
+    GridView listView;
     Button btn;
 
     @Override
