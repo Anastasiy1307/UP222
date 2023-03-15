@@ -34,13 +34,8 @@ public class Profile extends AppCompatActivity {
 
         v = findViewById(com.google.android.material.R.id.ghost_view);
 
-        btn = findViewById(R.id.button3);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
+
         GetTextFromSQL(v);
     }
 
